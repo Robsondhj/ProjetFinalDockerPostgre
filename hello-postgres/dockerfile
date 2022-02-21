@@ -1,0 +1,6 @@
+FROM postgres:14-alpine
+LABEL  maintainer="robson" SGBD="Postgres"
+ENV CONTAINER_USER="robson"
+RUN adduser $CONTAINER_USER --disabled-password
+CMD ["postgres"]
+
